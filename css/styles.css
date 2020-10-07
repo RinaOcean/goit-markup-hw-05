@@ -173,7 +173,21 @@ h3 {
 }
 
 .link-current {
+  position: relative;
   color: var(--accent-color);
+}
+
+.link-current::after {
+  content: "";
+
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 29px;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .contacts-icon {
@@ -309,8 +323,6 @@ h3 {
   align-items: center;
   width: 100%;
   height: 70px;
-  /*left: 215px;
-  top: 1435px;*/
 
   background: rgba(47, 48, 58, 0.8);
 }
@@ -648,4 +660,32 @@ h3 {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* ============ END PORTFOLIO PAGE ============ */
+.image-wrapper {
+  position: relative;
+}
+
+.description-wrapper {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-bottom: 63px;
+  padding-right: 24px;
+
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.work-list-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.555;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+/* ============ END PORTFOLIO PAGE ============ */ ;
