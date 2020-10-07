@@ -22,6 +22,8 @@ img {
 }
 
 body {
+  padding-top: 80px;
+
   font-family: var(--main-font);
   font-style: normal;
   color: var(--main-text-color);
@@ -105,9 +107,15 @@ h3 {
 /* ============ HEADER ============ */
 
 .page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
+  background-color: var(--dark-theme-color);
 }
 
 .page-header .container {
@@ -184,7 +192,7 @@ h3 {
   display: block;
   width: 100%;
   height: 4px;
-  margin-top: 29px;
+  bottom: -32px;
 
   background-color: var(--accent-color);
   border-radius: 2px;
