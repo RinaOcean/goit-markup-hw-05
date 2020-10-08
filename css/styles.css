@@ -668,11 +668,17 @@ h3 {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.image-wrapper {
-  position: relative;
+.work-list-item:hover .work-list-description {
+  transform: translatey(0%);
 }
 
-.description-wrapper {
+.image-wrapper {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.work-list-description {
   position: absolute;
   top: 0;
 
@@ -684,6 +690,9 @@ h3 {
   padding-right: 24px;
 
   background: rgba(33, 150, 243, 0.9);
+
+  transform: translatey(100%);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-list-description {
