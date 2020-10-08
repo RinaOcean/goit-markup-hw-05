@@ -22,7 +22,7 @@ img {
 }
 
 body {
-  /*padding-top: 80px;*/
+  padding-top: 80px;
 
   font-family: var(--main-font);
   font-style: normal;
@@ -107,11 +107,11 @@ h3 {
 /* ============ HEADER ============ */
 
 .page-header {
-  /*position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  width: 100%;*/
+  width: 100%;
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -245,6 +245,7 @@ h3 {
 
 .backdrop {
   position: fixed;
+  z-index: 105;
   top: 0;
   left: 0;
 
