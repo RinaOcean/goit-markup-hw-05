@@ -311,6 +311,7 @@ h3 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 
 .advantages-list-description {
