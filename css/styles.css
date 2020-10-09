@@ -291,10 +291,17 @@ h3 {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--dark-theme-color);
-  background-image: url("../images/close-nodal.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
+
+.close-icon {
+  width: 11px;
+  height: 11px;
+}
+
+.close-icon:hover {
+  fill: var(--accent-color);
+}
+
 /* ============ END HERO ============ */
 
 /* ============ ADVANTAGES ============ */
